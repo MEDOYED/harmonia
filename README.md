@@ -1,4 +1,4 @@
-git clone https://github.com/MEDOYED/Motion-Wise.git --> для того чтобы стянуть репозиторий с GitHub
+git clone https://github.com/MEDOYED/harmonia --> для того чтобы стянуть репозиторий с GitHub
 
 ---
 
@@ -6,7 +6,7 @@ git init
 git add .
 git commit -m " "
 git branch -M main
-git remote add origin https://github.com/MEDOYED/Motion-Wise.git
+git remote add origin https://github.com/MEDOYED/harmonia
 git push -u origin main
 
 ---
