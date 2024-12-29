@@ -1,8 +1,12 @@
+import { useRef } from "react";
+
 import "./home-page.scss";
 
 const HomePage = () => {
+  const inputRef = useRef(null);
+
   const handleClick = () => {
-    document.getElementById("file-input").click();
+    inputRef.current.click();
   };
 
   const handleFileChange = (event) => {
@@ -19,12 +23,12 @@ const HomePage = () => {
           <h1>Загрузить аудиофайл</h1>
           <h2>Форматы (.mp3, .wav, .ogg) до 1гб</h2>
           <input
-            className="file-input"
             type="file"
             id="file-input"
             accept=".mp3,.wav,.ogg"
             style={{ display: "none" }}
             onChange={handleFileChange}
+            ref={inputRef}
           />
         </button>
 
