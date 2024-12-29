@@ -1,0 +1,57 @@
+.raport {
+  height: 100%;
+  width: 100%;
+  background-color: $blue;
+  padding: 134px 314px;
+  border-radius: 30px;
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(237, 238, 239);
+    padding: 5px;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 33px 0 69px 0;
+  }
+
+  &__option {
+    padding: 12px 75px;
+  }
+
+  &__option.active {
+    border-radius: 18px;
+    background: rgb(255, 255, 255);
+  }
+
+  &__description {
+    color: #fff;
+    font-size: 29px;
+    line-height: 125%;
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  &__download-btn {
+    display: block;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+    border-radius: 14.86px;
+    background: rgb(255, 255, 255);
+    padding: 13px 38px;
+    margin-inline: auto;
+  }
+}
