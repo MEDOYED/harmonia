@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./components/app/app";
 import HomePage from "./components/pages/home-page/home-page";
 import ProfilePage from "./components/pages/profile-page/profile-page";
-import RegistrationPage from "./components/pages/registration-page/registration-page";
+import ReportPage from "./components/pages/raport-page/report-page";
 import SignUpPage from "./components/pages/sign-up-page/sign-up-page";
 
 import "./main.css";
@@ -17,7 +17,7 @@ ReactDOM.createRoot(root).render(
       <Route path="/" element={<App />}>
         <Route index element={<HomePage />} />
         <Route path="profile" element={<ProfilePage />} />
-        <Route path="registration" element={<RegistrationPage />} />
+        <Route path="report" element={<ReportPage />} />
         <Route path="signup" element={<SignUpPage />} />
       </Route>
     </Routes>

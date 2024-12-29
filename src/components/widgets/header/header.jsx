@@ -11,8 +11,8 @@ const Header = () => {
         <Link className="header__link" to={"/profile"}>
           Profile
         </Link>
-        <Link className="header__link" to={"/registration"}>
-          Registration
+        <Link className="header__link" to={"/report"}>
+          Report
         </Link>
         <Link className="header__link" to={"/signup"}>
           Sign Up
