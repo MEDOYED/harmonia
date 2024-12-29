@@ -12,6 +12,13 @@ const HomePage = () => {
     }
   };
 
+  // const checkboxState = () => {
+  //   const checkbox = document.getElementsByClassName("checkbox-round");
+
+  //   if(checkbox)
+
+  // };
+
   return (
     <>
       <div className="home-page">
@@ -28,24 +35,37 @@ const HomePage = () => {
           />
         </button>
 
-        <div className="home-page__form">
+        <form className="home-page__form">
           <div className="type">
-            <input type="checkbox" className="checkbox-round" />
+            <div className="checkbox-container">
+              <input type="checkbox" className="checkbox-round" />
+              <div className="checkbox-inner"></div>
+            </div>
+
             <p>Выгорание</p>
           </div>
           <div className="type">
-            <input type="checkbox" className="checkbox-round" />
+            <div className="checkbox-container">
+              <input type="checkbox" className="checkbox-round" />
+              <div className="checkbox-inner"></div>
+            </div>
             <p>Эмоциональный анализ</p>
           </div>
           <div className="type">
-            <input type="checkbox" className="checkbox-round" />
+            <div className="checkbox-container">
+              <input type="checkbox" className="checkbox-round" />
+              <div className="checkbox-inner"></div>
+            </div>
             <p>Скорость речи</p>
           </div>
           <div className="type">
-            <input type="checkbox" className="checkbox-round" />
+            <div className="checkbox-container">
+              <input type="checkbox" className="checkbox-round" />
+              <div className="checkbox-inner"></div>
+            </div>
             <p>Выбрать все</p>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
