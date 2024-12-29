@@ -12,13 +12,6 @@ const HomePage = () => {
     }
   };
 
-  // const checkboxState = () => {
-  //   const checkbox = document.getElementsByClassName("checkbox-round");
-
-  //   if(checkbox)
-
-  // };
-
   return (
     <>
       <div className="home-page">
