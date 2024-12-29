@@ -6,7 +6,8 @@
     height: 550px;
     border-radius: 30px;
     text-align: center;
-    background: url("../../../assets/img/home-bg.png") center center/cover no-repeat;
+    background: url("../../../assets/img/home-bg.png") center center/cover
+      no-repeat;
     color: #fff;
     h1 {
       font-size: 100px;
@@ -40,24 +41,6 @@
     .type {
       display: flex;
       align-items: center;
-      margin-right: 80px;
-      .checkbox-round {
-        width: 37px;
-        height: 37px;
-        background: transparent;
-        border-radius: 50%;
-        vertical-align: middle;
-        border: 3px solid #fff;
-        appearance: none;
-        -webkit-appearance: none;
-        outline: none;
-        cursor: pointer;
-        margin-right: 15px;
-      }
-
-      .checkbox-round:checked {
-        background-color: #fff;
-      }
       p {
         color: #fff;
         font-family: Inter;

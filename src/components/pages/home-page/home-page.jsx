@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import CheckBox from "../../widgets/checkbox/checkbox";
 import "./home-page.scss";
 
 const HomePage = () => {
@@ -34,32 +34,20 @@ const HomePage = () => {
 
         <form className="home-page__form">
           <div className="type">
-            <div className="checkbox-container">
-              <input type="checkbox" className="checkbox-round" />
-              <div className="checkbox-inner"></div>
-            </div>
+            <CheckBox />
 
             <p>Выгорание</p>
           </div>
           <div className="type">
-            <div className="checkbox-container">
-              <input type="checkbox" className="checkbox-round" />
-              <div className="checkbox-inner"></div>
-            </div>
+            <CheckBox />
             <p>Эмоциональный анализ</p>
           </div>
           <div className="type">
-            <div className="checkbox-container">
-              <input type="checkbox" className="checkbox-round" />
-              <div className="checkbox-inner"></div>
-            </div>
+            <CheckBox />
             <p>Скорость речи</p>
           </div>
           <div className="type">
-            <div className="checkbox-container">
-              <input type="checkbox" className="checkbox-round" />
-              <div className="checkbox-inner"></div>
-            </div>
+            <CheckBox />
             <p>Выбрать все</p>
           </div>
         </form>
