@@ -103,3 +103,27 @@ a {
 /* ====  reset-css ==== */
 /* ====  reset-css ==== */
 /* ====  reset-css ==== */
+
+/* ====  fonts  === */
+/* ====  fonts  === */
+/* ====  fonts  === */
+
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Inter"), url("./assets/fonts/Inter-Regular.ttf") format(truetype);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Inter"), url("./assets/fonts/Inter-SemiBold.ttf") format(truetype);
+  font-display: swap;
+}
+
+/* ====  fonts  === */
+/* ====  fonts  === */
+/* ====  fonts  === */
