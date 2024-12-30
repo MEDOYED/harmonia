@@ -1,15 +1,31 @@
+import { useState } from "react";
+
 import "./report-page.scss";
 
 const RaportPage = () => {
+  const [activeOption, setActiveOption] = useState(0);
+
+  const options = ["Тональность", "Эмоции", "Голоса"];
+
+  const handleClick = (index) => {
+    setActiveOption(index);
+  };
+
   return (
     <>
       <section className="raport-page raport">
         <h1>Отчет</h1>
         <ul className="raport__options">
-          <li className="raport__option active">Тональность</li>
-          <li className="raport__option">Эмоции</li>
-          <li className="raport__option">Голоса</li>
+          {options.map((option, index) => (
+            <li
+              key={index}
+              className={`raport__option ${activeOption === index ? "active" : ""}`}
+              onClick={() => handleClick(index)}>
+              {option}
+            </li>
+          ))}
         </ul>
+
         <p className="raport__description">
           Тут будет описываться сам отчет по каждой категории отдельно Тут будет описываться сам
           отчет по каждой категории отдельно Тут будет описываться сам отчет по каждой категории
