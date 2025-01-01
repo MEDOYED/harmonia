@@ -1,14 +1,33 @@
+import { useState } from "react";
+
 import "./sign-up-page.scss";
 
 const SignUpPage = () => {
+  const [activeOption, setActiveOption] = useState(0);
+
+  const options = ["Sign up", "Register"];
+
+  const handleClick = (index) => {
+    setActiveOption(index);
+  };
+
   return (
     <>
       <div className="sign-up">
         <div className="sign-up__container">
           <h2 className="logo">Harmonia</h2>
           <ul className="sign-up__options">
-            <li className="sign-up__option active">Sign up</li>
-            <li className="sign-up__option">Register</li>
+            {options.map((option, index) => (
+              <li
+                key={index}
+                className={`raport__option ${
+                  activeOption === index ? "active" : ""
+                }`}
+                onClick={() => handleClick(index)}
+              >
+                {option}
+              </li>
+            ))}
           </ul>
           <form action="" className="registration">
             <div className="input-container">
