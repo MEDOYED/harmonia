@@ -1,11 +1,13 @@
 import { useState } from "react";
-
+import google from "../../../assets/img/google.png";
+import apple from "../../../assets/img/apple.png";
+import facebook from "../../../assets/img/facebook.png";
 import "./sign-up-page.scss";
 
 const SignUpPage = () => {
   const [activeOption, setActiveOption] = useState(0);
 
-  const options = ["Sign up", "Register"];
+  const options = ["Sign in", "Sign up"];
 
   const handleClick = (index) => {
     setActiveOption(index);
@@ -29,20 +31,52 @@ const SignUpPage = () => {
               </li>
             ))}
           </ul>
-          <form action="" className="registration">
-            <div className="input-container">
-              <p>Email address</p>
-              <input type="text" placeholder="Your email" />
+          {activeOption === 0 ? (
+            <form action="" className="login">
+              <div className="input-container">
+                <p>Email address</p>
+                <input type="text" placeholder="Your email" />
+              </div>
+              <div className="input-container">
+                <p>Password</p>
+                <input type="password" placeholder="Password" />
+              </div>
+              <a href="#" className="forgot_password">
+                Forgot password?
+              </a>
+              <button className="sign-up__button">Sign in</button>
+            </form>
+          ) : (
+            <form action="" className="registration">
+              <div className="input-container">
+                <p>Email address</p>
+                <input type="text" placeholder="Your email" />
+              </div>
+              <div className="input-container">
+                <p>Password</p>
+                <input type="password" placeholder="Password" />
+              </div>
+              <button className="sign-up__button">Sign up</button>
+            </form>
+          )}
+          <p className="other">Other sign in options</p>
+          <div className="other-registration">
+            <div className="other-registration__item">
+              <a href="#" className="item-link">
+                <img src={google} alt="" />
+              </a>
             </div>
-            <div className="input-container">
-              <p>Password</p>
-              <input type="text" placeholder="Password" />
+            <div className="other-registration__item">
+              <a href="#" className="item-link">
+                <img src={apple} alt="" />
+              </a>
             </div>
-            <a href="#" className="forgot_password">
-              Forgot password?
-            </a>
-          </form>
-          <button className="sign-up__button">Sign in</button>
+            <div className="other-registration__item">
+              <a href="#" className="item-link">
+                <img src={facebook} alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>
@@ -50,3 +84,14 @@ const SignUpPage = () => {
 };
 
 export default SignUpPage;
+
+// import React, { useState } from "react";
+
+// const SignUpPage = () => {
+//   const [activeOption, setActiveOption] = useState(0); // 0 - Sign Up, 1 - Register
+
+//   const options = ["Sign up", "Register"];
+
+//   const handleClick = (index) => {
+//     setActiveOption(index);
+//   };
