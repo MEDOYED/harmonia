@@ -84,14 +84,3 @@ const SignUpPage = () => {
 };
 
 export default SignUpPage;
-
-// import React, { useState } from "react";
-
-// const SignUpPage = () => {
-//   const [activeOption, setActiveOption] = useState(0); // 0 - Sign Up, 1 - Register
-
-//   const options = ["Sign up", "Register"];
-
-//   const handleClick = (index) => {
-//     setActiveOption(index);
-//   };
