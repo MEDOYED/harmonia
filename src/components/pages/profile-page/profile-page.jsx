@@ -1,3 +1,5 @@
+import HistorySection from "../../widgets/history-section/history-section";
+
 import "./profile-page.scss";
 
 const ProfilePage = () => {
@@ -5,7 +7,7 @@ const ProfilePage = () => {
     <>
       <section className="profile-page ">
         <div className="profile-page__change-profile-wrapper">
-          <div className="profile-page__change-profile">Редактировать профиль</div>
+          <div className="profile-page__title">Редактировать профиль</div>
           <form className="profile-page__profile" action="">
             <p className="profile-page__profile-name">
               <label htmlFor="name">Имя</label>
@@ -25,6 +27,8 @@ const ProfilePage = () => {
             </p>
           </form>
         </div>
+
+        <HistorySection />
       </section>
     </>
   );
