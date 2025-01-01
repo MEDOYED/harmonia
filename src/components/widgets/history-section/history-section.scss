@@ -1,0 +1,62 @@
+.profile-page {
+  &__history-wrapper {
+    background-color: rgb(97, 192, 255);
+    padding: 27px 80px 41px 80px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    &.history {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__history {
+    display: flex;
+    align-items: flex-start;
+
+    .filter-img {
+      margin: 8px 0 0 100px;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 29px 44px;
+    }
+
+    &-item {
+      padding: 32px 32px 32px 28px;
+      background-color: #fff;
+      border: 1.79px solid rgb(216, 218, 220);
+      border-radius: 18px;
+      display: flex;
+      font-size: 26px;
+      line-height: 125%;
+      margin: 0;
+
+      .title {
+        margin-right: 28px;
+      }
+
+      .date {
+        margin-right: 28px;
+      }
+
+      .time {
+        margin-right: 28px;
+      }
+
+      .process {
+        margin-right: 28px;
+      }
+
+      .download-icon {
+        margin-right: 28px;
+      }
+    }
+  }
+}

@@ -5,9 +5,10 @@
     border-radius: 30px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 22px;
   }
 
-  &__change-profile {
+  &__title {
     display: flex;
     margin-left: auto;
     font-weight: 600;
