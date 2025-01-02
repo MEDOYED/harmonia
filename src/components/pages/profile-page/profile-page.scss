@@ -10,12 +10,11 @@
 
   &__title {
     display: flex;
-    margin-left: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
     font-weight: 600;
-    line-height: 125%;
     font-size: 26px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
+    color: black;
     cursor: default;
   }
 
@@ -29,18 +28,19 @@
       flex-direction: column;
 
       label {
-        font-size: 32px;
+        font-size: 25px;
         line-height: 125%;
       }
 
       input {
-        padding: 32px 80px 32px 28px;
+        padding: 20px 80px 20px 28px;
         border: 1.79px solid rgb(216, 218, 220);
         border-radius: 17.93px;
         margin-top: 14px;
+        font-size: 20px;
 
         &::placeholder {
-          font-size: 29px;
+          font-size: 20px;
         }
       }
     }

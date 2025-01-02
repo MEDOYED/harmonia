@@ -5,38 +5,56 @@
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 22px;
+    position: relative;
   }
 
   &__title {
     &.history {
-      margin-bottom: 22px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-size: 26px;
+      color: black;
     }
   }
 
   &__history {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
 
     .filter-img {
-      margin: 8px 0 0 100px;
+      position: absolute;
+      top: 27px;
+      right: 30px;
     }
 
     &-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 29px 44px;
+      gap: 30px 6vw;
     }
 
     &-item {
-      padding: 32px 32px 32px 28px;
+      padding: 20px 20px 20px 18px;
       background-color: #fff;
       border: 1.79px solid rgb(216, 218, 220);
       border-radius: 18px;
       display: flex;
-      font-size: 26px;
-      line-height: 125%;
+      font-size: 20px;
       margin: 0;
+
+      button {
+        background: transparent;
+        .play-icon {
+          width: 25px;
+          height: 32px;
+        }
+
+        .download-icon {
+          margin-right: 28px;
+          width: 28px;
+          height: 32px;
+        }
+      }
 
       .title {
         margin-right: 28px;
@@ -51,10 +69,6 @@
       }
 
       .process {
-        margin-right: 28px;
-      }
-
-      .download-icon {
         margin-right: 28px;
       }
     }
