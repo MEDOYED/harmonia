@@ -1,0 +1,40 @@
+.profile-page__history-item {
+  padding: 20px 20px 20px 18px;
+  background-color: #fff;
+  border: 1.79px solid rgb(216, 218, 220);
+  border-radius: 18px;
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+
+  button {
+    background: transparent;
+    .play-icon {
+      width: 25px;
+      height: 32px;
+    }
+
+    .download-icon {
+      margin-right: 28px;
+      width: 28px;
+      height: 32px;
+    }
+  }
+
+  .title {
+    margin-right: 28px;
+  }
+
+  .date {
+    margin-right: 28px;
+  }
+
+  .time {
+    margin-right: 28px;
+  }
+
+  .process {
+    margin-right: 28px;
+    white-space: nowrap;
+  }
+}
