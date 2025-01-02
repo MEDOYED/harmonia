@@ -15,30 +15,15 @@ const ProfilePage = () => {
             </p>
             <p className="profile-page__profile-email">
               <label htmlFor="email">E-mail address</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="example@gmail.com"
-              />
+              <input type="email" name="email" id="email" placeholder="example@gmail.com" />
             </p>
             <p className="profile-page__profile-surname">
               <label htmlFor="surname">Фамилия</label>
-              <input
-                type="text"
-                name="surname"
-                id="surname"
-                placeholder="Surname"
-              />
+              <input type="text" name="surname" id="surname" placeholder="Surname" />
             </p>
             <p className="profile-page__profile-pass">
               <label htmlFor="password">Пароль</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="******"
-              />
+              <input type="password" name="password" id="password" placeholder="******" />
             </p>
           </form>
         </div>
