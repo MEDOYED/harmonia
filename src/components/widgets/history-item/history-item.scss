@@ -6,6 +6,7 @@
   display: flex;
   font-size: 20px;
   margin: 0;
+  color: rgba(0, 0, 0, 0.5);
 
   button {
     background: transparent;
@@ -36,5 +37,13 @@
   .process {
     margin-right: 28px;
     white-space: nowrap;
+
+    &.error {
+      color: rgb(230, 70, 70);
+    }
+
+    &.completed {
+      color: rgb(52, 168, 83);
+    }
   }
 }
