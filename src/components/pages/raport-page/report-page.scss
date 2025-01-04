@@ -2,8 +2,11 @@
   height: 100%;
   width: 100%;
   background-color: $blue;
-  padding: 134px 314px;
+  padding: 10% 20%;
   border-radius: 30px;
+  @media (max-width: 850px) {
+    padding: 5% 10%;
+  }
 
   h1 {
     color: rgb(255, 255, 255);
@@ -11,6 +14,9 @@
     font-weight: 600;
     line-height: 130%;
     text-align: center;
+    @media (max-width: 800px) {
+      font-size: 70px;
+    }
   }
 
   &__options {
@@ -20,12 +26,30 @@
     padding: 5px;
     border-radius: 18px;
     font-weight: 600;
-    font-size: 26px;
-    margin: 33px 0 69px 0;
+    font-size: 25px;
+    margin: 33px auto 69px;
+    width: 100%;
+    @media (max-width: 1280px) {
+      font-size: 20px;
+      margin: 20px auto 40px;
+    }
+    @media (max-width: 850px) {
+      width: 400px;
+      font-size: 12px;
+      margin: 10px auto 20px;
+    }
+    @media (max-width: 555px) {
+      width: 300px;
+    }
+    @media (max-width: 415px) {
+      width: 250px;
+    }
   }
 
   &__option {
-    padding: 12px 75px;
+    padding: 12px 0px;
+    text-align: center;
+    width: 33%;
     cursor: pointer;
   }
 
@@ -40,6 +64,9 @@
     line-height: 125%;
     text-align: center;
     margin-bottom: 33px;
+    @media (max-width: 800px) {
+      font-size: 25px;
+    }
   }
 
   &__download-btn {
@@ -48,11 +75,18 @@
     color: rgb(0, 0, 0);
     font-size: 37px;
     font-weight: 600;
-    line-height: 130%;
     text-align: center;
     border-radius: 14.86px;
     background: rgb(255, 255, 255);
     padding: 13px 38px;
-    margin-inline: auto;
+    margin: 0 auto;
+    @media (max-width: 800px) {
+      height: 60px;
+      font-size: 30px;
+    }
+    @media (max-width: 400px) {
+      height: 80px;
+      font-size: 30px;
+    }
   }
 }
