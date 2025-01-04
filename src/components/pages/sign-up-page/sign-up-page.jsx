@@ -22,7 +22,7 @@ const SignUpPage = () => {
             {options.map((option, index) => (
               <li
                 key={index}
-                className={`raport__option ${
+                className={`sign-up__option ${
                   activeOption === index ? "active" : ""
                 }`}
                 onClick={() => handleClick(index)}
@@ -63,17 +63,17 @@ const SignUpPage = () => {
           <div className="other-registration">
             <div className="other-registration__item">
               <a href="#" className="item-link">
-                <img src={google} alt="" />
+                <img src={google} alt="google" />
               </a>
             </div>
             <div className="other-registration__item">
               <a href="#" className="item-link">
-                <img src={apple} alt="" />
+                <img src={apple} alt="apple" />
               </a>
             </div>
             <div className="other-registration__item">
               <a href="#" className="item-link">
-                <img src={facebook} alt="" />
+                <img src={facebook} alt="facebook" />
               </a>
             </div>
           </div>
