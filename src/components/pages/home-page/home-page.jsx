@@ -35,7 +35,6 @@ const HomePage = () => {
         <form className="home-page__form">
           <div className="type">
             <CheckBox />
-
             <p>Выгорание</p>
           </div>
           <div className="type">

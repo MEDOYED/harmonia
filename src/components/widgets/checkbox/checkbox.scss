@@ -14,3 +14,11 @@
 .checkbox:checked {
   background-color: #012e4a;
 }
+
+@media (max-width: 900px) {
+  .checkbox {
+    width: 4vw;
+    height: 4vw;
+    margin-bottom: 5px;
+  }
+}
