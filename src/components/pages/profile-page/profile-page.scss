@@ -67,6 +67,23 @@
           max-width: 28px;
         }
       }
+
+      @media (max-width: 380px) {
+        label,
+        input,
+        input::placeholder {
+          font-size: 18px;
+        }
+
+        img {
+          max-width: 18px;
+        }
+
+        &__inner {
+          padding: 15px 18px 15px 14px;
+          margin-top: 10px;
+        }
+      }
     }
   }
 }

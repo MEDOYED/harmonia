@@ -1,9 +1,10 @@
 .profile-page__history-item {
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px 20px 20px 18px;
   background-color: #fff;
   border: 1.79px solid rgb(216, 218, 220);
   border-radius: 18px;
-  display: flex;
   font-size: 20px;
   margin: 0;
   color: rgba(0, 0, 0, 0.5);
