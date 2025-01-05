@@ -12,6 +12,28 @@
     }
   }
 
+  &__nav {
+    display: flex;
+    justify-content: end;
+    width: 35%;
+    margin: 0 auto;
+
+    .link {
+      padding: 13px 15px;
+      margin: 15px 0px 15px 0;
+      border-radius: 15px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      border: 2px solid rgb(0, 0, 0, 0.3);
+      color: #000;
+    }
+  }
+
   .logo {
     color: rgb(0, 0, 0);
     font-family: Poppins;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 import "./report-page.scss";
 
@@ -13,6 +14,11 @@ const RaportPage = () => {
 
   return (
     <>
+      <nav className="report-page__nav">
+        <Link className="header__link" to={"/"}>
+          На главную
+        </Link>
+      </nav>
       <section className="raport-page raport">
         <h1>Отчет</h1>
         <ul className="raport__options">
@@ -27,19 +33,14 @@ const RaportPage = () => {
         </ul>
 
         <p className="raport__description">
-          Тут будет описываться сам отчет по каждой категории отдельно Тут будет
-          описываться сам отчет по каждой категории отдельно Тут будет
-          описываться сам отчет по каждой категории отдельно Тут будет
-          описываться сам отчет по каждой категории отдельно Тут будет
-          описываться сам отчет по каждой категории отдельно Тут будет
-          описываться сам отчет по каждой категории отдельно
+          Тут будет описываться сам отчет по каждой категории отдельно Тут будет описываться сам
+          отчет по каждой категории отдельно Тут будет описываться сам отчет по каждой категории
+          отдельно Тут будет описываться сам отчет по каждой категории отдельно Тут будет
+          описываться сам отчет по каждой категории отдельно Тут будет описываться сам отчет по
+          каждой категории отдельно
         </p>
 
-        <a
-          className="raport__download-btn"
-          href="path/to/your/file.pdf"
-          download
-        >
+        <a className="raport__download-btn" href="path/to/your/file.pdf" download>
           Скачать отчет
         </a>
       </section>

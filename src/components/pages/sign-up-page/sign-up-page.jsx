@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router";
+
 import google from "../../../assets/img/google.png";
 import apple from "../../../assets/img/apple.png";
 import facebook from "../../../assets/img/facebook.png";
+
 import "./sign-up-page.scss";
 
 const SignUpPage = () => {
@@ -15,6 +18,11 @@ const SignUpPage = () => {
 
   return (
     <>
+      <nav className="sign-up__nav">
+        <Link className="link" to={"/"}>
+          Выход
+        </Link>
+      </nav>
       <div className="sign-up">
         <div className="sign-up__container">
           <h2 className="logo">Harmonia</h2>
@@ -22,11 +30,8 @@ const SignUpPage = () => {
             {options.map((option, index) => (
               <li
                 key={index}
-                className={`sign-up__option ${
-                  activeOption === index ? "active" : ""
-                }`}
-                onClick={() => handleClick(index)}
-              >
+                className={`sign-up__option ${activeOption === index ? "active" : ""}`}
+                onClick={() => handleClick(index)}>
                 {option}
               </li>
             ))}

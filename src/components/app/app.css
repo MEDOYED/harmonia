@@ -1,0 +1,26 @@
+/* === global styles === */
+/* === global styles === */
+/* === global styles === */
+
+.header__link {
+  padding: 20px 30px;
+  margin: 15px 15px 15px 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(66, 178, 252);
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header__link :hover {
+  background-color: #2980b9;
+}
+
+/* === global styles === */
+/* === global styles === */
+/* === global styles === */
