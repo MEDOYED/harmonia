@@ -41,10 +41,12 @@
 
     &.error {
       color: rgb(230, 70, 70);
+      min-width: 111px;
     }
 
     &.completed {
       color: rgb(52, 168, 83);
+      min-width: 111px;
     }
   }
 }
