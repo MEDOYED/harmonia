@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 import HistorySection from "../../widgets/history-section/history-section";
 
@@ -23,6 +24,11 @@ const ProfilePage = () => {
 
   return (
     <>
+      <nav className="profile-page__nav">
+        <Link className="header__link" to={"/"}>
+          На главную
+        </Link>
+      </nav>
       <section className="profile-page ">
         <div className="profile-page__change-profile-wrapper">
           <div className="profile-page__title">Редактировать профиль</div>

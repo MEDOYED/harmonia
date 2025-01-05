@@ -1,3 +1,8 @@
+.report-page__nav {
+  display: flex;
+  justify-content: end;
+}
+
 .raport {
   height: 100%;
   width: 100%;
@@ -7,6 +12,12 @@
   @media (max-width: 850px) {
     padding: 5% 10%;
   }
+
+  // &__link {
+  //   display: flex;
+  //   margin: 0 auto;
+  //   max-width: 80px;
+  // }
 
   h1 {
     color: rgb(255, 255, 255);

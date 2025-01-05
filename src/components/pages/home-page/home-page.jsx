@@ -1,5 +1,8 @@
 import { useRef } from "react";
+import { Link } from "react-router";
+
 import CheckBox from "../../widgets/checkbox/checkbox";
+
 import "./home-page.scss";
 
 const HomePage = () => {
@@ -18,6 +21,21 @@ const HomePage = () => {
 
   return (
     <>
+      <nav>
+        <div className="home-page__nav-wrapper">
+          <div>
+            <Link className="header__link" to={"/profile"}>
+              Профиль
+            </Link>
+            <Link className="header__link" to={"/report"}>
+              Отчет
+            </Link>
+          </div>
+          <Link className="header__link" to={"/signup"}>
+            Вход
+          </Link>
+        </div>
+      </nav>
       <div className="home-page">
         <button className="home-page__button" onClick={handleClick}>
           <h1>Загрузить аудиофайл</h1>

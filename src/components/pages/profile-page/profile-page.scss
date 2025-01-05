@@ -1,4 +1,9 @@
 .profile-page {
+  &__nav {
+    display: flex;
+    justify-content: end;
+  }
+
   &__change-profile-wrapper {
     background-color: rgb(97, 192, 255);
     padding: 34px 80px 100px 80px;
