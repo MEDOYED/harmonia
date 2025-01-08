@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 import google from "../../../assets/img/google.png";
 import apple from "../../../assets/img/apple.png";
 import facebook from "../../../assets/img/facebook.png";
+import eyeIcon from "../../../assets/img/eye.svg";
 
 import "./sign-up-page.scss";
 
@@ -14,53 +15,72 @@ const SignUpPage = () => {
 
   const handleClick = (index) => {
     setActiveOption(index);
+    console.log("Changing activeOption to:", index);
   };
 
   return (
     <>
       <nav className="sign-up__nav">
         <Link className="link" to={"/"}>
-          Выход
+          Выходlllll
         </Link>
       </nav>
       <div className="sign-up">
         <div className="sign-up__container">
           <h2 className="logo">Harmonia</h2>
           <ul className="sign-up__options">
-            {options.map((option, index) => (
+            {options.map((option) => (
               <li
-                key={index}
-                className={`sign-up__option ${activeOption === index ? "active" : ""}`}
-                onClick={() => handleClick(index)}>
+                key={option}
+                className={`sign-up__option ${
+                  activeOption === options.indexOf(option) ? "active" : ""
+                }`}
+                onClick={() => handleClick(options.indexOf(option))}>
                 {option}
               </li>
             ))}
           </ul>
           {activeOption === 0 ? (
-            <form action="" className="login">
+            <form onSubmit={(e) => e.preventDefault()} className="login">
               <div className="input-container">
                 <p>Email address</p>
-                <input type="text" placeholder="Your email" />
+                <div className="sign-up__input-wrapper">
+                  <input type="text" placeholder="Your email" />
+                  <img src={eyeIcon} alt="eye" />
+                </div>
               </div>
+
               <div className="input-container">
                 <p>Password</p>
-                <input type="password" placeholder="Password" />
+                <div className="sign-up__input-wrapper">
+                  <input type="password" placeholder="Password" />
+                  <img src={eyeIcon} alt="eye" />
+                </div>
               </div>
+
               <a href="#" className="forgot_password">
                 Forgot password?
               </a>
               <button className="sign-up__button">Sign in</button>
             </form>
           ) : (
-            <form action="" className="registration">
+            <form onSubmit={(e) => e.preventDefault()} className="registration">
               <div className="input-container">
                 <p>Email address</p>
-                <input type="text" placeholder="Your email" />
+                <div className="sign-up__input-wrapper">
+                  <input type="text" placeholder="Your email" />
+                  <img src={eyeIcon} alt="eye" />
+                </div>
               </div>
+
               <div className="input-container">
                 <p>Password</p>
-                <input type="password" placeholder="Password" />
+                <div className="sign-up__input-wrapper">
+                  <input type="password" placeholder="Password" />
+                  <img src={eyeIcon} alt="eye" />
+                </div>
               </div>
+
               <button className="sign-up__button">Sign up</button>
             </form>
           )}
