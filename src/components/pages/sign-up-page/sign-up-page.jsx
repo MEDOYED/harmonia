@@ -22,7 +22,7 @@ const SignUpPage = () => {
     <>
       <nav className="sign-up__nav">
         <Link className="link" to={"/"}>
-          Выходlllll
+          Выход
         </Link>
       </nav>
       <div className="sign-up">
@@ -46,7 +46,6 @@ const SignUpPage = () => {
                 <p>Email address</p>
                 <div className="sign-up__input-wrapper">
                   <input type="text" placeholder="Your email" />
-                  <img src={eyeIcon} alt="eye" />
                 </div>
               </div>
 
@@ -69,7 +68,6 @@ const SignUpPage = () => {
                 <p>Email address</p>
                 <div className="sign-up__input-wrapper">
                   <input type="text" placeholder="Your email" />
-                  <img src={eyeIcon} alt="eye" />
                 </div>
               </div>
 
