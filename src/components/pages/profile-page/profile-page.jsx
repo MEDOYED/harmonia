@@ -8,18 +8,10 @@ import eyeIcon from "../../../assets/img/eye.svg";
 import "./profile-page.scss";
 
 const ProfilePage = () => {
-  const [inputTypes, setInputTypes] = useState({
-    name: "password",
-    email: "password",
-    surname: "password",
-    password: "password",
-  });
+  const [inputType, setInputType] = useState("password");
 
-  const toggleInputType = (field) => {
-    setInputTypes((prevTypes) => ({
-      ...prevTypes,
-      [field]: prevTypes[field] === "password" ? "text" : "password",
-    }));
+  const toggleInputType = () => {
+    setInputType((prevType) => (prevType === "password" ? "text" : "password"));
   };
 
   return (
@@ -36,53 +28,29 @@ const ProfilePage = () => {
             <p className="profile-page__profile-item">
               <label htmlFor="name">Имя</label>
               <div className="profile-page__profile-item__inner">
-                <input type={inputTypes.name} name="name" id="name" placeholder="Name" />
-                <img onClick={() => toggleInputType("name")} src={eyeIcon} alt="eye" />
+                <input type="text" name="name" id="name" placeholder="Name" />
               </div>
             </p>
 
             <p className="profile-page__profile-item">
               <label htmlFor="email">E-mail address</label>
               <div className="profile-page__profile-item__inner">
-                <input
-                  type={inputTypes.email}
-                  name="email"
-                  id="email"
-                  placeholder="example@gmail.com"
-                />
-                <img onClick={() => toggleInputType("email")} src={eyeIcon} alt="eye" />
+                <input type="text" name="email" id="email" placeholder="example@gmail.com" />
               </div>
             </p>
 
             <p className="profile-page__profile-item">
               <label htmlFor="surname">Фамилия</label>
               <div className="profile-page__profile-item__inner">
-                <input
-                  type={inputTypes.surname}
-                  name="surname"
-                  id="surname"
-                  placeholder="Surname"
-                />
-                <img onClick={() => toggleInputType("surname")} src={eyeIcon} alt="eye" />
+                <input type="text" name="surname" id="surname" placeholder="Surname" />
               </div>
             </p>
 
             <p className="profile-page__profile-item">
               <label htmlFor="password">Пароль</label>
               <div className="profile-page__profile-item__inner">
-                <input
-                  type={inputTypes.password}
-                  name="password"
-                  id="password"
-                  placeholder="******"
-                />
-                <img
-                  onClick={() => {
-                    toggleInputType("password");
-                  }}
-                  src={eyeIcon}
-                  alt="eye"
-                />
+                <input type={inputType} name="password" id="password" placeholder="******" />
+                <img onClick={toggleInputType} src={eyeIcon} alt="eye" />
               </div>
             </p>
           </form>
