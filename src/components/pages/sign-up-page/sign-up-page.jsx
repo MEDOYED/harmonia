@@ -18,6 +18,12 @@ const SignUpPage = () => {
     console.log("Changing activeOption to:", index);
   };
 
+  const [inputType, setInputType] = useState("password");
+
+  const toggleInputType = () => {
+    setInputType((prevType) => (prevType === "password" ? "text" : "password"));
+  };
+
   return (
     <>
       <nav className="sign-up__nav">
@@ -52,8 +58,8 @@ const SignUpPage = () => {
               <div className="input-container">
                 <p>Password</p>
                 <div className="sign-up__input-wrapper">
-                  <input type="password" placeholder="Password" />
-                  <img src={eyeIcon} alt="eye" />
+                  <input type={inputType} placeholder="Password" />
+                  <img onClick={toggleInputType} src={eyeIcon} alt="eye" />
                 </div>
               </div>
 
@@ -74,8 +80,8 @@ const SignUpPage = () => {
               <div className="input-container">
                 <p>Password</p>
                 <div className="sign-up__input-wrapper">
-                  <input type="password" placeholder="Password" />
-                  <img src={eyeIcon} alt="eye" />
+                  <input type={inputType} placeholder="Password" />
+                  <img onClick={toggleInputType} src={eyeIcon} alt="eye" />
                 </div>
               </div>
 
